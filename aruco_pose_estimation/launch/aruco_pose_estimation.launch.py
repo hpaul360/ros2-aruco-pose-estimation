@@ -115,7 +115,7 @@ def generate_launch_description():
     camera_feed_depth_node = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(cam_feed_launch_file),
         launch_arguments={
-            "pointcloud.enable": "true",
+            #"pointcloud.enable": "true",
             "enable_rgbd": "true",
             "enable_sync": "true",
             "align_depth.enable": "true",
@@ -128,8 +128,9 @@ def generate_launch_description():
     camera_feed_node = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(cam_feed_launch_file),
         launch_arguments={
-            "pointcloud.enable": "true",
+            #"pointcloud.enable": "true",
             "enable_color": "true",
+            "rgb_camera.color_profile": "320x180x60",
         }.items(),
         condition=UnlessCondition(LaunchConfiguration('use_depth_input'))
     )
