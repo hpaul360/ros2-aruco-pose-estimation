@@ -23,9 +23,9 @@ different cameras, provided a proper calibration of the camera parameters.
 This package depends on a recent version of OpenCV python library and transforms libraries:
 
 ```bash
-$ pip3 install opencv-python opencv-contrib-python transforms3d
+pip3 install opencv-python opencv-contrib-python transforms3d
 
-$ sudo apt install ros-humble-tf-transformations
+sudo apt install ros-humble-tf-transformations
 ```
 
 Build the package from source with `colcon build --symlink-install` in the workspace root.

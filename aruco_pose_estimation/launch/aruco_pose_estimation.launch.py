@@ -164,5 +164,5 @@ def generate_launch_description():
         aruco_node, 
         camera_feed_depth_node,
         camera_feed_node,
-        rviz2_node
+        #rviz2_node
     ])
